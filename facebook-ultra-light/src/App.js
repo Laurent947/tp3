@@ -105,7 +105,7 @@ class App extends React.Component {
                   <span className="date">{this.state.date_de_naissance}</span></p>
  
                   <button onClick={() => this.changeColor()} className="style">
-                          Changer style
+                          Change style
                   </button>
                   
                   </div> 
