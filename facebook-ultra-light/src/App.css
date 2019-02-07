@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    margin-top:30px;
+    margin-right:110px; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .menu_list button{
+    border: 1px solid #600 ;
+    float: right;
+    margin-right: 20px ;
+  }
+  
+  .menu_list button a{
+    display: block;
+    text-align: center;
+    padding: 7px 30px;
+    text-decoration: none;
+  }
+  
+  .menu_list button a:hover {
+    color: #ffaa3b;;
+  }
+
+  .main-body{
+      margin-top:30px; 
+      margin-left:350px; 
+      width: 500px;
+      height: 350px;
+      border: 1px solid black ;
+
+  }
+ 
+
+  .style { 
+    background-color: rgb(68, 58, 58);
+    color: white;
+    padding: 2px 8px;
+    text-align: center;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 15px;
+    border: 2px solid #555555;
+    border-radius: 3px;
+    position: absolute;
+    margin-top:43px;
+    margin-left: 375px;
+  }
+
+  .style:hover{
+    background-color: #568386;
+  }
+
+  .photo img{
+      margin-top:20px;
+      margin-left: 38%;
+      width:140px;
+      height: 140px;
+      -webkit-border-radius:65px;
+      -moz-border-radius:65px;
+      border-radius:65px;
+  }
+
+.prenom{
+  margin-left: 50px;
+}
+
+.nom{
+    margin-left:240px;
+}
+.date{
+  margin-left: 50px;
+
+}
+
+.tweet-container {
+  color: black;
+  width: 500px;
+  height: 135px;
+  margin-top:10px;
+  margin-left: 350px;
+  border: 1px solid black;
+}
+
+.tweet_texte{
+  float: left;
+  margin-left: 10px;
+}
+
+h4{
+	margin-left: 10px;
+    display:inline-block;
+}
+
+.tweet_image img{
+  margin-top: 20px;
+  margin-right: 30px;
+  width: 200px;
+  height: 95px;
+  float: right;
+}
+
+.super{
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  background-color:white; 
+  border: 1px solid black;
+  height: 25px;
+
+}
+
+.super_img{
+  padding-right: 1px;
+  width:34px;
+  height: 26px;
+  float: left;
+  padding-bottom: 8px;
+}
+
+.super_text{
+  float: right;
+  
+}
+
+.nb_super{
+  margin-left: 10px;
+  
+}
