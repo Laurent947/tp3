@@ -9,7 +9,9 @@ class App extends React.Component {
             prenom:"Jeanne",
             nom:"D'arc",
             date_de_naissance:"10/03/1991",
-            color:'#39D1B4',
+            colorJ:'#39D1B4',
+            colorM:'#39D1B4',
+            colorC:'#39D1B4',
             author:"Jeanne d'Arc",
             tweet_text:"J'entends des voix!",
             tweet_img:require('./image/bucher.jpg'),
@@ -57,8 +59,17 @@ class App extends React.Component {
 	    var colory = '#';
 	    for (var i = 0; i < 6; i++ ) {
 		  colory += letters[Math.floor(Math.random() * 16)];
-	    }
-	    this.setState({color: colory});				 
+        }
+        if(this.state.prenom=="Jeanne"){
+            this.setState({colorJ: colory}); 
+        }
+        if(this.state.prenom=="Martine"){
+            this.setState({colorM: colory});
+        }
+        if(this.state.prenom=="Claude"){
+            this.setState({colorC: colory});
+        }
+        				 
     }
 
     count(){
@@ -83,6 +94,18 @@ class App extends React.Component {
             return this.state.nbc;
         }
     }
+
+    displayColor(){
+        if(this.state.prenom=="Jeanne"){
+            return this.state.colorJ;
+        }
+        if(this.state.prenom=="Martine"){
+            return this.state.colorM;
+        }
+        if(this.state.prenom=="Claude"){
+            return this.state.colorC;
+        }
+    }
     
     render() {
       return (
@@ -94,7 +117,7 @@ class App extends React.Component {
                     <button onClick={() => this.jeanne()}><a href="#">Jeanne</a></button>
                   </ul>
               </nav>
-              <div style={{background: this.state.color}} className="main-body">
+              <div style={{background: this.displayColor()}} className="main-body">
                   <div className="photo">
                         <img src={this.state.name_img} alt="photo de profil"/>
                   </div>       
